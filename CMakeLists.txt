@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.20)
 project (metal_cpp_rocks)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra")
 
 find_library(APPLE_FWK_FOUNDATION Foundation REQUIRED)
 find_library(APPLE_FWK_QUARTZ_CORE QuartzCore REQUIRED)

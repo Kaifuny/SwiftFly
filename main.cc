@@ -177,7 +177,6 @@ void MyAppDelegate::applicationDidFinishLaunching( NS::Notification* pNotificati
 
 bool MyAppDelegate::applicationShouldTerminateAfterLastWindowClosed( NS::Application* pSender )
 {
-    (void)pSender;
     return true;
 }
 
