@@ -11,12 +11,13 @@ find_library(APPLE_FWK_METAL_KIT MetalKit REQUIRED)
 find_library(APPLE_FWK_APP_KIT AppKit REQUIRED)
 
 add_executable(swiftfly
-  main.cc
+  main_vulkan.cc
 )
 
 target_include_directories(swiftfly
   SYSTEM PUBLIC ${CMAKE_SOURCE_DIR}/vender/metal-cpp
   SYSTEM PUBLIC ${CMAKE_SOURCE_DIR}/vender/metal-cpp-extensions
+  SYSTEM PUBLIC ${VULKAN_INCLUDE_DIRS}
 )
 
 target_link_libraries(swiftfly
